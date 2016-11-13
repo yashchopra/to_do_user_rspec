@@ -2,7 +2,7 @@
 
 ## Download & Setup
 
-- Clone the repo: `git clone`
+- Clone the repo: `git clone https://github.com/NextLevelRails-winter-2016/todo_with_rspec.git`
 - Navigate into the app: `cd todo_with_rspec`
 - Create a new branch to work with: `git checkout -b YOUR_INTIALS_HERE_branch`
 - Install dependencies and create/migrate your database: 
