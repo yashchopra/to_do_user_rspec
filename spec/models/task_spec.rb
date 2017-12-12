@@ -19,4 +19,8 @@ RSpec.describe Task, type: :model do
     task = build(:task, priority: nil)
     expect(task).not_to be_valid
   end
+
+  it 'belongs to user' do
+    expect(Task.reflect_on_association(:user).macro).to eq(:belongs_to)
+  end
 end
