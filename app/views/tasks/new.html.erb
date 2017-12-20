@@ -1,0 +1,16 @@
+<%= form_for @task do |f| %>
+<div>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+</div>
+<div>
+	<%= f.label :priority %>
+	<%= f.text_field :priority %>
+</div>
+<div>
+    <%= f.label :user_id %>
+    <%= f.collection_select(:user_id, User.all, :id, :email, {id: :task_user_id}) %>
+</div>
+
+<%= f.submit %>
+<% end %>

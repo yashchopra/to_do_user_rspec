@@ -7,6 +7,7 @@ RSpec.describe Task, type: :model do
 
   it 'is valid with valid attributes' do
     task = create(:vote)
+    task = create(:vote)
     expect(task).to be_valid
   end
 
@@ -23,4 +24,5 @@ RSpec.describe Task, type: :model do
   it 'belongs to user' do
     expect(Task.reflect_on_association(:user).macro).to eq(:belongs_to)
   end
+
 end
